@@ -1,6 +1,8 @@
 #!/bin/bash
-
+RES=""
 for file in *.pub
 do
-echo "${file%.pub}"
+RES+="${file%.pub} "
 done
+
+echo "${RES}"
