@@ -19,8 +19,78 @@ MyArray=("Element 1" "Element 2" 42 1337)
 
 echo "$@"
 
+ACTION=""
 
-for argument in "$@"
+
+if [ -z "$1" ]; then
+        echo "please provde at least one argument"
+        exit 0
+
+elif [ "$1" = "add" ]; then 
+        ACTION="add"
+elif [ "$1" = "sub" ]; then 
+        ACTION="sub"
+elif [ "$1" = "mul" ]; then 
+        ACTION="mul"
+elif [ "$1" = "div" ]; then 
+        ACTION="div"
+elif [ "$1" = "cross" ]; then 
+        ACTION="cross"
+
+elif [ "$1" = "-help" ]; then 
+echo "USE :"
+echo "add X Y"
+echo "sub X Y"
+echo "mul X Y"
+echo "div X Y"
+echo "cross X"
+
+fi
+
+X=0
+Y=0
+RESULT=""
+# CHECK FOR X AND Y
+if [ "$#" == "1" ]; then
+echo "TYPE X: "
+read X
+echo "TYPE Y: "
+read Y
+
+elif [ "$#" == "3" ]; then
+X="$2"
+Y="$3"
+
+else
+        echo "invalid arg count"
+        exit 0
+fi
+
+
+if [ "$ACTION" = "add" ]; then 
+ RESULT=$(($X+$Y))
+elif [ "$ACTION" = "sub" ]; then 
+ RESULT=$(($X-$Y))
+elif [ "$ACTION" = "mul" ]; then 
+ RESULT=$(($X*$Y))
+elif [ "$ACTION" = "div" ]; then 
+ RESULT=$(($X/$Y))
+elif [ "$ACTION" = "div" ]; then 
+ RESULT=$(($X/$Y))
+
+elif [ "$ACTION" = "cross" ]; then 
+
+TMP=$X 
+sum=0 #STORE THE SUM OF THE DIGITS
+  
+while [ $TMP -gt 0 ] 
 do
-        echo "$argument"
+    k=$(( $TMP % 10 ))  #STORE LAST POS
+    TMP=$(( $TMP / 10 )) #GET NEXT DIGIT
+    sum=$(( $sum + $k ))   #ADD SINGLE DIGIT
 done
+RESULT=$sum
+
+fi
+
+echo "${X} ${ACTION} ${Y} = ${RESULT}"
