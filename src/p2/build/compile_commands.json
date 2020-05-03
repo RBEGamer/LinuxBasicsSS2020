@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/Users/marcelochsendorf/Desktop/LinuxBasicsSS2020/src/p2/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -isystem /usr/local/include -I/Users/marcelochsendorf/Desktop/LinuxBasicsSS2020/src/p2/include  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -o CMakeFiles/helloworld.dir/src/helloworld.cpp.o -c /Users/marcelochsendorf/Desktop/LinuxBasicsSS2020/src/p2/src/helloworld.cpp",
+  "file": "/Users/marcelochsendorf/Desktop/LinuxBasicsSS2020/src/p2/src/helloworld.cpp"
+},
+{
+  "directory": "/Users/marcelochsendorf/Desktop/LinuxBasicsSS2020/src/p2/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -Dmylibrary_EXPORTS -I/Users/marcelochsendorf/Desktop/LinuxBasicsSS2020/src/p2/include  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -fPIC   -o CMakeFiles/mylibrary.dir/src/MyLibrary.cpp.o -c /Users/marcelochsendorf/Desktop/LinuxBasicsSS2020/src/p2/src/MyLibrary.cpp",
+  "file": "/Users/marcelochsendorf/Desktop/LinuxBasicsSS2020/src/p2/src/MyLibrary.cpp"
+}
+]

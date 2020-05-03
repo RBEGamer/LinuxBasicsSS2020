@@ -1,0 +1,4 @@
+/Users/marcelochsendorf/Desktop/LinuxBasicsSS2020/src/p2/build/CMakeFiles/rebuild_cache.dir
+/Users/marcelochsendorf/Desktop/LinuxBasicsSS2020/src/p2/build/CMakeFiles/edit_cache.dir
+/Users/marcelochsendorf/Desktop/LinuxBasicsSS2020/src/p2/build/CMakeFiles/helloworld.dir
+/Users/marcelochsendorf/Desktop/LinuxBasicsSS2020/src/p2/build/CMakeFiles/mylibrary.dir
